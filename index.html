@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Overpass:wght@300&display=swap"
+    rel="stylesheet">
+    <link href="index.css"rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+      
+        <div class="voice_text">
+            <h2 class="heading">
+                Voice Commands
+            </h2>
+            <ul class="list-item">
+            <li class="text"><Span>01</Span> Input Text (Enter Text to List)</li>
+            <li class="text"><Span>02</Span> Filter Item (Filter completed and Uncompleted Task)</li>
+            <li class="text"><Span>03</Span> Add Item (Adds Task to List)</li>
+            </ul>
+            <div class="nickname">
+                <input type="text" class="nickname-input" id="nickname-get" placeholder="Nickname">
+    
+                <button class="nickname-button" type="submit">
+                  Next
+                </button>
+            </div>
+        </div>
+           
+        <div class="img">
+            <img src="time34maddy.svg" alt="">
+        </div>
+
+    </div>
+</body>
+<script type="text/javascript">
+    const butt=document.querySelector('.nickname-button');
+    butt.addEventListener('click',function() {
+        var val=document.getElementById('nickname-get').value;
+        localStorage.setItem("result",val);
+        location.href="Second.html";    
+    });
+</script>
+</html>

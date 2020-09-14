@@ -1,0 +1,102 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    overflow: hidden;
+}
+body
+ {
+  background-color: #66a6ff;
+  font-family:"overpass" ,sans-serif;
+  color:white;
+ }
+ .main
+ {
+ display: flex;
+ justify-content:space-around;    
+ }
+ .main .img img
+ {   
+  margin-top:8rem ;   
+  height:60%;
+ }
+ .voice_text
+ {
+  margin-top:13rem;   
+  font-size:1.5rem;
+  font-family: overpass, sans-serif;
+  padding-left:6.5rem;
+ }
+ span{
+     color:black;
+     font-weight:900;
+     font-size:1.5rem;
+     margin-left: 0.48rem;
+     padding:0rem 0rem 0rem 0.1rem;
+ }
+ .heading
+ {
+ padding:0.5rem;    
+ font-weight:bold;
+ font-size:5rem;
+ line-height: 4.5rem;
+  text-shadow: 4px 4px 2.5px grey;
+ }
+ ul
+ {
+line-height:2rem;
+font-weight:500;
+ }
+ .nickname
+ {
+ margin:2rem 1rem;
+ }
+ .nickname-input
+{   
+ margin-left: 1rem;   
+ padding:0.4rem;
+ width:50%;
+ background-color:#66a6ff;
+ border:0.15rem solid white;
+ border-radius:0.5rem;
+ outline:none;
+ color:white;
+ transform: scale(1);
+ font-size:1.2rem;
+ transition: transform  ease-in-out 500ms;
+ }
+ .nickname-input:hover
+ {
+transform:scale(1.1);
+ }
+
+ .nickname-button
+ {
+ margin:1rem 1rem; 
+ border:none;
+ border-radius: 1.01rem;
+ padding:0.4rem 1rem;  
+ background-color:greenyellow;
+ font-size:1.2rem;
+ border:0.3rem solid greenyellow;
+ color:black;
+ box-shadow:0 10px 1em rgba(68, 74, 81, 0.3);
+ outline:none;
+ transform: scale(1);
+ transition:transform ease-in-out 500ms;   
+ }
+.nickname-button:hover
+{
+ 
+background-color:white;
+border-color:white;
+color:blue;
+transform:scale(1.1);
+}
+input::placeholder
+{
+color:black;
+opacity: 0.5;
+}

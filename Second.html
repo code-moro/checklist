@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Overpass:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="Second.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h3><span class="nickname-index"></span>'s Todo List</h3>
+    </header>
+    <div class="flex-d">
+        <form>
+            <input type="text" class="todo-input" id="get-input">
+            <button class="todo-button" types="submit">
+                <i class='bx bxs-plus-circle' id="icon"></i>
+            </button>
+        </form>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </div>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>  
+    <script src="main.js"></script>
+    </body>
+
+</html>
